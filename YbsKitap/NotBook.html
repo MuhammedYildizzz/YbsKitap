@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="NotBook.css" />
+    <title>Not Defteri</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+          <div class="navdiv">
+            <div class="Logo"><a href="./Home.html">YbsKitap</a></div>
+          </div>
+          <ul>
+            <li><a href="Home.html">Ana Sayfa</a></li>
+            <li><a href="NotBook.html">Not Defteri</a></li>
+            <li><a href="./Trainings.html">Eğitimler</a></li>
+            <li><a href="Instructor.html">Eğitmenler</a></li>
+            <li><a href="./Career.html">Kariyer Yönetimi</a></li>
+            <li><a href="./Resources.html">Kaynaklar</a></li>
+          </ul>
+          
+        </div>
+        <div class="defterBody">
+          <div class="defter">
+
+          
+            <div class="defterInput">
+                <input class="input" id="input" type="text" placeholder="Notunuzu Giriniz...">
+                <input class="inputd" id="date" type="datetime-local">
+                
+                <div class="btnDiv">
+                <input class="button" id="addButton" type="button" value="Ekle" >
+                </div>
+                
+            </div>
+            <div  class="noteField">
+              <ul id="noteField">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  <script>
+    let date=document.getElementById("date")
+    let input=document.getElementById("input");
+    let addButton=document.getElementById("addButton");
+    let clearButton=document.getElementById("clearButton");
+    let noteField=document.getElementById("noteField");
+
+    addButton.addEventListener("click",function(){
+
+      let li=document.createElement("li");
+      li.classList.add("liDo")
+      if (input.value!=""){
+
+      
+      noteField.appendChild(li);
+      li.innerHTML=input.value;
+      input.value="";
+      let p =document.createElement("p");
+      li.appendChild(p);
+      p.innerHTML=date.value;
+
+      }
+      else{
+        let ynote =alert("Lütfen notunuzu giriniz...")
+      }
+      
+      li.addEventListener('click', function(){
+
+        if(li.style.backgroundColor=="wheat"){
+          okundu=document.createElement("h4");
+          
+        li.style.backgroundColor="lightgray"
+        }
+        
+        else{
+          li.style.backgroundColor="wheat";
+         
+        }
+
+
+
+      })
+      li.addEventListener("dblclick", function(){
+
+        li.remove();
+      })
+
+
+      })
+    
+
+    
+
+  </script>
+
+</body>
+</html>

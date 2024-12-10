@@ -1,0 +1,175 @@
+*{
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+html{
+    background:linear-gradient();
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    border-bottom: 3px solid black;
+    text-align: center;
+    align-items: center;
+    background-color: #ffff;
+
+}
+.navbar ul li a:hover{
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+}
+
+.navdiv{
+    font-size: 35px;
+    color: rgb(13, 13, 13);
+}
+
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.navbar ul li a{
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.defterBody{
+    background-color: wheat;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    
+}
+.defter{
+    padding-right: 15px;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding-left: 65px;
+    background-image: url("./Photos/notebook.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 10px;
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+.defterInput{
+
+    flex-direction: column;
+    margin-top: 10px ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    height: 250px;
+    width: 400px;
+    padding: 15px 15px 15px 25px;
+
+}
+
+.input{
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px ;
+    font-size: 25px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    width: 100%;
+    height:40px ;
+}
+.inputd{
+    padding: 15px 15px 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px ;
+    border: none;
+    background-color: transparent;
+    width: 70%;
+    height: 40px;
+    margin: 20px;
+}
+.btnDiv{
+    display: flex;
+}
+.button{
+    opacity:0.7;
+    filter:alpha(opacity=60);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 5px;
+    box-shadow: 0 0 10px;
+    border: none;
+    background-color: lightgreen;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+.button:hover{
+    opacity: 0.9;
+}
+.noteField{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    background-color: transparent;
+    height: 300px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.noteField ul li{
+
+    padding: 15px;
+    background-color:wheat;
+    opacity:0.7;
+    filter:alpha(opacity=60);
+    border-radius: 5px;
+    width:300px; 
+    word-wrap:break-word;
+    list-style:decimal;
+    list-style-position: bottom;
+    margin:15px 15px 15px 15px;
+    color: black;
+    box-shadow: 0 0 10px;
+}
+.noteField ul li h4{
+    background-color: lightgreen;
+}
+
+

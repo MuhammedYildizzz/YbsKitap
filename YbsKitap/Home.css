@@ -1,0 +1,99 @@
+*{
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+html{
+    background:linear-gradient();
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    border-bottom: 3px solid black;
+    text-align: center;
+    align-items: center;
+    background-color: #ffff;
+
+}
+.navbar ul li a:hover{
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+}
+
+.navdiv{
+    font-size: 35px;
+    color: rgb(13, 13, 13);
+}
+
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.navbar ul li a{
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.body{
+    height: 565px;
+    overflow: scroll;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 120px 50px 50px;
+}
+.tanitim{
+    margin-top: 60px;
+}
+h3{
+    font-size: 30px;
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+.icerik{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+}
+.icerik p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 20px;
+}
+.video iframe{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}

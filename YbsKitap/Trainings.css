@@ -1,0 +1,157 @@
+*{
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+html{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    border-bottom: 3px solid black;
+    text-align: center;
+    align-items: center;
+    background-color: #ffff;
+
+}
+
+.navbar ul li a:hover{
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+}
+
+.navdiv{
+    font-size: 35px;
+    color: rgb(13, 13, 13);
+}
+
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.navbar ul li a{
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icerik{
+    margin-top: 47px;
+    display: flex;
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 3px solid gray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+.header:hover{
+    border-right: 8px double gray;
+}
+.header ul li a{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 3px solid gray;
+
+}
+.header ul li a:hover{
+    color: black;
+    border-bottom: 8px double black;
+    transition: 0.2s;
+}
+.body{
+    height: 670px;
+    float: right;
+    overflow: scroll;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.baslik{
+    border-top: 3px solid black;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.card{
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+.card a img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cardbody{
+    box-shadow:0 0 10px gray; 
+    margin: 15px;
+    padding: 5px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.cardbody:hover{
+    box-shadow:0 0 15px green;
+}
+.cardbody h6{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding-left:2px ;
+    padding-right: 2px;
+}
